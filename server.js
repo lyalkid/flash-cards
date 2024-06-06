@@ -23,7 +23,12 @@ function loadFlashcards() {
 
 // Функция для сохранения всех карточек в CSV
 function saveFlashcards(flashcards) {
-  const data = flashcards.map(({ id, question, answer }) => `${id},${question.replace(/,/g, '')},${answer.replace(/,/g, '')}`).join('\n');
+  const data = flashcards.map(({ id, question, answer }) => {
+    // Проверки на наличие значений перед вызовом метода replace
+    const safeQuestion = question ? question.replace(/,/g, '') : '';
+    const safeAnswer = answer ? answer.replace(/,/g, '') : '';
+    return `${id},${safeQuestion},${safeAnswer}`;
+  }).join('\n');
   fs.writeFileSync('flashcards.csv', data);
 }
 
