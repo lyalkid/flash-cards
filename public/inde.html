@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <button id="add-flashcard">Add Flashcard</button>
+    <button id="start-review-btn">Start Review</button>
+    <div class="card-list-container"></div>
+  </div>
+  <div id="add-question-card" class="hide">
+    <input type="text" id="question" placeholder="Question">
+    <input type="text" id="answer" placeholder="Answer">
+    <button id="save-btn">Save</button>
+    <button id="close-btn">Close</button>
+    <div id="error" class="hide">Question and Answer are required.</div>
+  </div>
+  <div id="review-card-container" class="hide">
+    <div id="review-question"></div>
+    <div id="review-answer" class="hide"></div>
+    <button id="show-answer-btn">Show Answer</button>
+    <button id="learned-btn" class="hide">I Know This</button>
+    <button id="next-card-btn">Next Card</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

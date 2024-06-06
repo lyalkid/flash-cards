@@ -5,7 +5,8 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #f7f9fd;
+  background-color: #1a237e; /* Темно-синий фон */
+  color: #ffffff; /* Белый цвет шрифта */
 }
 .container {
   width: 90vw;
@@ -13,10 +14,19 @@ body {
   position: relative;
   margin: auto;
 }
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
+}
+header h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
 .add-flashcard-con {
   display: flex;
-  justify-content: flex-end;
-  padding: 1.2em 1em;
+  justify-content: center;
+  padding: 1.2em 0;
 }
 button {
   border: none;
@@ -25,7 +35,7 @@ button {
 }
 .add-flashcard-con button {
   font-size: 1em;
-  background-color: #587ef4;
+  background-color: #3949ab; /* Более светлый темно-синий */
   color: #ffffff;
   padding: 0.8em 1.2em;
   font-weight: 500;
@@ -40,18 +50,19 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: #3949ab; /* Темно-синий */
+  color: #ffffff; /* Белый цвет текста */
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   padding: 3em 2em;
   border-radius: 0.6em;
-  box-shadow: 0 1em 2em rgba(28, 0, 80, 0.1);
+  box-shadow: 0 1em 2em rgba(28, 0, 80, 0.2);
 }
 .question-container h2 {
   font-size: 2.2em;
-  color: #363d55;
+  color: #ffffff; /* Белый цвет текста */
   font-weight: 600;
   text-align: center;
   margin-bottom: 2em;
@@ -71,18 +82,18 @@ button {
 }
 .fa-xmark {
   font-size: 1.4em;
-  background-color: #587ef4;
+  background-color: #1a237e; /* Темно-синий */
   height: 1.8em;
   width: 1.8em;
   display: grid;
   place-items: center;
-  color: #ffffff;
+  color: #ffffff; /* Белый цвет текста */
   border-radius: 50%;
   cursor: pointer;
   justify-self: flex-end;
 }
 label {
-  color: #363d55;
+  color: #ffffff; /* Белый цвет текста */
   font-weight: 600;
   margin-bottom: 0.3em;
 }
@@ -91,7 +102,7 @@ textarea {
   padding: 0.7em 0.5em;
   border: 1px solid #d0d0d0;
   outline: none;
-  color: #414a67;
+  color: #1a237e; /* Темно-синий текст */
   border-radius: 0.3em;
   resize: none;
 }
@@ -99,12 +110,12 @@ textarea:not(:last-child) {
   margin-bottom: 1.2em;
 }
 textarea:focus {
-  border-color: #363d55;
+  border-color: #ffffff; /* Белый цвет */
 }
 #save-btn {
   font-size: 1em;
-  background-color: #587ef4;
-  color: #ffffff;
+  background-color: #1a237e; /* Темно-синий */
+  color: #ffffff; /* Белый цвет текста */
   padding: 0.6em 0;
   border-radius: 0.3em;
   font-weight: 600;
@@ -116,8 +127,9 @@ textarea:focus {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .card {
-  background-color: #ffffff;
-  box-shadow: 0 0.4em 1.2em rgba(28, 0, 80, 0.08);
+  background-color: #3949ab; /* Темно-синий */
+  color: #ffffff; /* Белый цвет текста */
+  box-shadow: 0 0.4em 1.2em rgba(28, 0, 80, 0.2);
   padding: 1.2em;
   border-radius: 0.4em;
 }
@@ -128,17 +140,15 @@ textarea:focus {
 .question-div {
   margin-bottom: 0.5em;
   font-weight: 500;
-  color: #363d55;
 }
 .answer-div {
   margin-top: 1em;
   font-weight: 400;
-  color: #414a67;
 }
 .show-hide-btn {
   display: block;
-  background-color: #587ef4;
-  color: #ffffff;
+  background-color: #1a237e; /* Темно-синий */
+  color: #ffffff; /* Белый цвет текста */
   text-decoration: none;
   text-align: center;
   padding: 0.6em 0;
@@ -155,7 +165,7 @@ textarea:focus {
   font-size: 1.2em;
 }
 .edit {
-  color: #587ef4;
+  color: #1a237e; /* Темно-синий */
 }
 .delete {
   color: #ff5353;
